@@ -12,7 +12,7 @@
 		//Mengambil data dari file headline.txt dengan fungsi $.get() JQuery
 		$.get('headline.txt',function(obj){
 			//Pisahkan \n yang menjadi batas antar headline (newline)
-			//var headline=obj.split('\n');
+			var headline=obj.split('\n');
 			var str='';
 			//Looping data headline
 			for(var i=0;i<headline.length;i++){
