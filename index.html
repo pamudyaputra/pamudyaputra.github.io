@@ -13,12 +13,15 @@
 				//Tag tabel awal
 				var str="<table border=1>";
 				//Judul tabel
-				str+="<tr><td>No</td><td>Judul Headline</td></tr>";
+				str+="<tr><td>No</td><td>Judul</td><td>Kategori</td><td>Publish</td><td>Date</td></tr>";
 				//Looping data headline dengan fungsi $.each() JQuery
 				$.each(obj,function(n,data){
 					//Isi tabel
 					str+="<tr><td>"+(n+1)+"</td>";
-					str+="<td>"+data.judul+"</td></tr>";
+              			  	str+="<td>"+data.title+"</td>";
+						str+="<td>"+data.category+"</td>";
+						str+="<td>"+data.publish+"</td>";
+						str+="<td>"+data.date+"</td></tr>";
 				});
 				//Tag tabel penutup
 				str+="</tabel>";
